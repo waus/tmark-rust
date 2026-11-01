@@ -1,0 +1,19 @@
+[package]
+name = "tmark"
+version = "0.1.0"
+edition = "2021"
+description = "Typed tmark documents, strict and forward-compatible parsing, and HTML, Markdown and terminal rendering"
+license = "MIT"
+homepage = "https://tmark.waus.app"
+repository = "https://github.com/waus/tmark-rust"
+readme = "README.md"
+keywords = ["tmark", "markup", "parser", "markdown", "document"]
+categories = ["encoding", "parser-implementations", "text-processing"]
+exclude = [".github/"]
+
+[dependencies]
+chrono = { version = "0.4", default-features = false, features = ["std"] }
+chrono-tz = "0.10"
+
+[dev-dependencies]
+serde_json = "1"
